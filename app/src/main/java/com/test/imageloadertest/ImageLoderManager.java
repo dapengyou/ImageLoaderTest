@@ -89,11 +89,11 @@ public class ImageLoderManager {
 
     public void displayImage(ImageView imageView, String url, ImageLoadingListener listener) {
         if (mLoader != null) {
-            mLoader.displayImage(url, imageView, null, listener);
+            mLoader.displayImage(url, imageView,listener);
         }
     }
 
     public void displayImage(ImageView imageView, String url) {
-        displayImage(imageView, url, null, null);
+        displayImage(imageView, url, null);
     }
 }
